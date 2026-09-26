@@ -22,7 +22,7 @@ RUN bun install --frozen-lockfile
 # ---------- Development ----------
 FROM deps AS dev
 COPY . .
-EXPOSE 4000
+EXPOSE 3000
 CMD ["bun", "run", "dev"]
 
 # ----------- Typecheck -----------
@@ -54,5 +54,5 @@ COPY --chown=app:app package.json ./
 COPY --chown=app:app drizzle.config.ts ./
  
 USER app
-EXPOSE 4000
+EXPOSE 3000
 CMD ["bun", "run", "start"]

@@ -1,0 +1,40 @@
+{
+  "name": "src",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch index.ts",
+    "start": "bun run index.ts",
+    "build": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.3",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
+    "@typescript-eslint/parser": "^8.70.1",
+    "eslint": ">=10.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-xo": "^4.0.1",
+    "globals": "^17.12.0",
+    "prettier": ">=3",
+    "typescript-eslint": "^8.70.1",
+    "vitest": "^5.0.2"
+  },
+  "peerDependencies": {
+    "typescript": ">=6"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0"
+  },
+  "trustedDependencies": [
+    "unrs-resolver"
+  ]
+}
