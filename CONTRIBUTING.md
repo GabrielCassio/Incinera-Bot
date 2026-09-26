@@ -11,13 +11,13 @@
 
 1. **Clone o repositório**:
    ```
-   git clone https://github.com/GabrielCassio/template-bun.git
-   cd template-bun
+   git clone https://github.com/GabrielCassio/Incinera-Bot.git
+   cd Incinera-Bot
    ```
 
-2. **Acesse um app**:
+2. **Acesse o app**:
     ``
-    cd apps/example
+    cd src
     ``
 
 3. **Instale as dependências**:
@@ -25,12 +25,11 @@
    bun install
    ```
 
-4. **Configure o ambiente do serviço**:
+4. **Configure o ambiente da source**:
    - Crie um arquivo `.env` na raiz do projeto baseado no `.env.example`
    - Preencha as variáveis necessárias:
-     - `DATABASE_NEON_URL`: URL do seu projeto NEON
-     - `DATABASE_NEON_POOLER`: Pooler do seu projeto NEON
-     - `DATABASE_NEON_ANON_KEY`: Chave anônima do NEON
+     - `BOY_TOKEN`: URL do seu bot do Discord
+     - `CLIENT_ID` : URL do client do Discord
 
 5. **Execute o projeto**:
    ```
